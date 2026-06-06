@@ -1,0 +1,49 @@
+# 全网分发清单 / Distribution manifest  (source of truth)
+#
+# 每篇文章一个条目：对应的 mo-marketing issue、matrixorigin-blog slug、中英文标题，
+# 以及各渠道的矩阵起源账号发布链接。
+#
+# - 监控脚本 (distribution/monitor.py) 会：
+#     1) 抓取可发现渠道(CSDN/OSChina/SegmentFault)的最新文章，自动匹配并把链接写进这里；
+#     2) 校验所有链接有效性；
+#     3) 把每篇文章的分发链接同步成对应 issue 下的一条「📡 全网分发」评论。
+# - 无法稳定抓取的渠道(微信公众号 / 知乎 / 墨天轮 / InfoQ / 51CTO)请人工把链接填到对应 channels 下。
+#
+# channels 可用 key: wechat, zhihu, csdn, oschina, infoq, modb, segmentfault, 51cto
+
+articles:
+  - key: nvidia-cuvs-vector-search
+    issue: 16
+    blog_slug: matrixone-nvidia-cuvs-vector-search
+    title_zh: "向量索引入核，驾驭亿级向量数据：MatrixOne × NVIDIA cuVS GPU 加速实践"
+    title_en: "In-Database Vector Index on GPU: How MatrixOne Uses NVIDIA cuVS for Large-Scale Vector Data"
+    channels:
+      wechat: "https://mp.weixin.qq.com/s/xXZLokTOkGVLi9JhmzkyoQ"
+      zhihu: "https://zhuanlan.zhihu.com/p/2045892294268678940"
+      csdn: "https://blog.csdn.net/MatrixOrigin/article/details/161692514"
+      oschina: "https://my.oschina.net/u/5472636/blog/19694318"
+      infoq: "https://xie.infoq.cn/article/e61e2276e990544bac04b74b3"
+      modb: "https://www.modb.pro/db/2062449563467325440"
+      segmentfault: "https://segmentfault.com/a/1190000047817870"
+      51cto: "https://blog.51cto.com/u_17650108/14658609"
+
+  - key: snowflake-data-company-ai-moment
+    issue: 18
+    blog_slug: snowflake-data-company-ai-moment
+    title_zh: "Snowflake 的 AI 标签终于贴牢了，数据公司的底蕴也终于在 AI 浪潮下凸显了"
+    title_en: "Snowflake's AI Label Finally Sticks — and Its Data-Company Roots Finally Shine in the AI Era"
+    channels: {}
+
+  - key: git4data-part1-data-at-scale
+    issue: 22
+    blog_slug: git4data-part1-data-at-scale
+    title_zh: "MatrixOne Git4Data 技术详解（一）：海量数据的 Git 时刻"
+    title_en: "MatrixOne Git4Data Deep Dive (Part 1): The Git Moment for Data at Scale"
+    channels: {}
+
+  - key: intelligent-cv-screening-solution
+    issue: 21
+    blog_slug: intelligent-cv-screening-solution
+    title_zh: "当简历筛选不再靠“人肉海选”，MOI 如何把招聘初筛变成一条完整智能链路"
+    title_en: "When CV Screening No Longer Means Reading Stacks by Hand: How MOI Turns First-Pass Screening into One Complete Intelligent Pipeline"
+    channels: {}

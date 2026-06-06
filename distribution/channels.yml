@@ -1,0 +1,49 @@
+# 矩阵起源各渠道官方账号配置 / MatrixOrigin channel accounts
+#
+# discover:
+#   api        — 有稳定接口，自动发现新文章（最可靠）
+#   best-effort — 尝试抓取，失败则跳过（不保证）
+#   manual     — 无法稳定自动抓取，链接需人工填入 manifest.yml
+
+channels:
+  csdn:
+    name: "CSDN"
+    account: "MatrixOrigin"
+    discover: api
+    list_api: "https://blog.csdn.net/community/home-api/v1/get-business-list?page=1&size=40&businessType=blog&username=MatrixOrigin"
+
+  segmentfault:
+    name: "SegmentFault"
+    account: "matrixorigin"
+    discover: best-effort
+    account_url: "https://segmentfault.com/u/matrixorigin"
+
+  oschina:
+    name: "OSChina"
+    account: "5472636"
+    discover: best-effort
+    account_url: "https://my.oschina.net/u/5472636"
+
+  "51cto":
+    name: "51CTO"
+    account: "u_17650108"
+    discover: manual          # 常对 CI 出口 IP 返回 5xx
+    account_url: "https://blog.51cto.com/u_17650108"
+
+  infoq:
+    name: "InfoQ 写作平台"
+    discover: manual          # 页面 JS 渲染，难稳定抓取
+    account_url: "https://xie.infoq.cn/u/MatrixOrigin/publish"
+
+  modb:
+    name: "墨天轮"
+    discover: manual
+    account_url: "https://www.modb.pro/u/..."
+
+  zhihu:
+    name: "知乎"
+    discover: manual          # 反爬严格，需登录态
+
+  wechat:
+    name: "微信公众号"
+    discover: manual          # 无公开接口，无法自动抓取
