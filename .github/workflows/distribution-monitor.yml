@@ -1,0 +1,55 @@
+name: distribution-monitor
+
+# 定时监控各渠道的矩阵起源账号文章发布，自动把链接关联到对应 issue。
+# 详见 distribution/README.md
+
+on:
+  schedule:
+    - cron: "0 1 * * *"        # 每天 09:00（北京时间）
+  workflow_dispatch:
+    inputs:
+      dry_run:
+        description: "只打印不写入（1 = dry-run）"
+        required: false
+        default: "0"
+
+permissions:
+  issues: write
+  contents: write
+
+concurrency:
+  group: distribution-monitor
+  cancel-in-progress: false
+
+jobs:
+  monitor:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+
+      - uses: actions/setup-python@v5
+        with:
+          python-version: "3.11"
+
+      - name: Install deps
+        run: pip install -r distribution/requirements.txt
+
+      - name: Run monitor
+        env:
+          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+          DEEPSEEK_API_KEY: ${{ secrets.DEEPSEEK_API_KEY }}
+          DRY_RUN: ${{ github.event.inputs.dry_run }}
+        run: python distribution/monitor.py
+
+      - name: Commit auto-discovered links
+        if: ${{ github.event.inputs.dry_run != '1' }}
+        run: |
+          if [[ -n "$(git status --porcelain distribution/discovered.yml)" ]]; then
+            git config user.name "mo-dist-bot"
+            git config user.email "github-actions[bot]@users.noreply.github.com"
+            git add distribution/discovered.yml
+            git commit -m "chore(dist): sync auto-discovered links [skip ci]"
+            git push
+          else
+            echo "no discovered-link changes"
+          fi
