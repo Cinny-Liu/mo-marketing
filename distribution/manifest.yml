@@ -32,7 +32,14 @@ articles:
     blog_slug: snowflake-data-company-ai-moment
     title_zh: "Snowflake 的 AI 标签终于贴牢了，数据公司的底蕴也终于在 AI 浪潮下凸显了"
     title_en: "Snowflake's AI Label Finally Sticks — and Its Data-Company Roots Finally Shine in the AI Era"
-    channels: {}
+    channels:
+      zhihu: "https://zhuanlan.zhihu.com/p/2056344336921633062"
+      csdn: "https://blog.csdn.net/MatrixOrigin/article/details/162551494"
+      modb: "https://www.modb.pro/db/2072929762478223360"
+      infoq: "https://xie.infoq.cn/article/bf522fa3f6ce30901556df11c"
+      51cto: "https://blog.51cto.com/u_17650108/14735354"
+      segmentfault: "https://segmentfault.com/a/1190000047959928"
+      oschina: "https://my.oschina.net/u/5472636/blog/19716162"
 
   - key: git4data-part1-data-at-scale
     issue: 22
