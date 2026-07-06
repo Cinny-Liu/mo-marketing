@@ -54,3 +54,17 @@ articles:
     title_zh: "当简历筛选不再靠“人肉海选”，MOI 如何把招聘初筛变成一条完整智能链路"
     title_en: "When CV Screening No Longer Means Reading Stacks by Hand: How MOI Turns First-Pass Screening into One Complete Intelligent Pipeline"
     channels: {}
+
+  - key: care-2026-award
+    issue: 33
+    blog_slug: care-2026-award
+    title_zh: "CARE 2026 获奖"
+    title_en: "CARE 2026 Award"
+    channels:
+      zhihu: "https://zhuanlan.zhihu.com/p/2056425009728451831"
+      csdn: "https://blog.csdn.net/MatrixOrigin/article/details/162556989"
+      modb: "https://www.modb.pro/db/2072973175571443712"
+      oschina: "https://my.oschina.net/u/5472636/blog/19716286"
+      infoq: "https://xie.infoq.cn/article/77af94217241886ab23476897"
+      51cto: "https://blog.51cto.com/u_17650108/14735584"
+      segmentfault: "https://segmentfault.com/a/1190000047961896"
