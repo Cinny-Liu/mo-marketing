@@ -68,3 +68,18 @@ articles:
       infoq: "https://xie.infoq.cn/article/77af94217241886ab23476897"
       51cto: "https://blog.51cto.com/u_17650108/14735584"
       segmentfault: "https://segmentfault.com/a/1190000047961896"
+
+  - key: git4data-part7-write-audit-publish
+    issue: 41
+    blog_slug: git4data-part7-write-audit-publish
+    title_zh: "MatrixOne Git4Data 技术详解（七）·数据运维实践篇：Write-Audit-Publish——给 ETL 流水线装一道发布门禁"
+    title_en: "MatrixOne Git4Data Deep Dive (Part 7): Write-Audit-Publish for ETL Pipelines"
+    channels:
+      wechat: "https://mp.weixin.qq.com/s/CSkNyMQo2eK9ANLkSEWf1g"
+      zhihu: "https://zhuanlan.zhihu.com/p/2057520932487533254"
+      csdn: "https://blog.csdn.net/MatrixOrigin/article/details/162640102"
+      modb: "https://www.modb.pro/db/2074071018625900544"
+      oschina: "https://my.oschina.net/u/5472636/blog/19717520"
+      infoq: "https://xie.infoq.cn/article/b0fbafb7c7f17f2bea61c8108"
+      segmentfault: "https://segmentfault.com/a/1190000047981106"
+      51cto: "http://blog.51cto.com/u_17650108/14742419"
