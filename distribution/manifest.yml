@@ -9,7 +9,7 @@
 #     3) 把每篇文章的分发链接同步成对应 issue 下的一条「📡 全网分发」评论。
 # - 无法稳定抓取的渠道(微信公众号 / 知乎 / 墨天轮 / InfoQ / 51CTO)请人工把链接填到对应 channels 下。
 #
-# channels 可用 key: wechat, zhihu, csdn, oschina, infoq, modb, segmentfault, 51cto
+# channels 可用 key: wechat, zhihu, csdn, oschina, infoq, modb, segmentfault, 51cto, linkedin, x, medium
 
 articles:
   - key: nvidia-cuvs-vector-search
@@ -83,3 +83,36 @@ articles:
       infoq: "https://xie.infoq.cn/article/b0fbafb7c7f17f2bea61c8108"
       segmentfault: "https://segmentfault.com/a/1190000047981106"
       51cto: "http://blog.51cto.com/u_17650108/14742419"
+
+  - key: git4data-part6-collaborative-dev
+    issue: 31
+    blog_slug: git4data-part6-collaborative-dev
+    title_zh: "MatrixOne Git4Data 技术详解（六）·数据运维实践篇：数据协作开发——像合并代码一样合并数据"
+    title_en: "MatrixOne Git4Data Deep Dive (Part 6) · Data Operations in Practice — Collaborative Data Development: Merge Data the Way You Merge Code"
+    channels:
+      zhihu: "https://zhuanlan.zhihu.com/p/2055721004844971557"
+      csdn: "https://blog.csdn.net/MatrixOrigin/article/details/162494813?spm=1001.2014.3001.5502"
+      modb: "https://www.modb.pro/db/2072269385575243776"
+      oschina: "https://my.oschina.net/u/5472636/blog/19715475"
+      infoq: "https://xie.infoq.cn/article/4a99ea3f6c72c37c75b78bbd5"
+      51cto: "https://blog.51cto.com/u_17650108/14730478"
+      segmentfault: "https://segmentfault.com/a/1190000047950915"
+      x: "https://x.com/memoria_ai/status/2072276526180323821"
+      linkedin: "https://www.linkedin.com/feed/update/urn:li:activity:7478077506978385921"
+      medium: "https://medium.com/@matrixorigin-database/matrixone-git4data-deep-dive-part-6-data-operations-in-practice-collaborative-data-374a447a351f"
+
+  - key: huaxida-bidding-agent
+    issue: 46
+    title_zh: "华曦达标书智能体案例"
+    title_en: "How We Rebuilt the Most Painful Part of Bidding with an AI Agent"
+    channels:
+      zhihu: "https://zhuanlan.zhihu.com/p/2058592571786539178"
+      csdn: "https://blog.csdn.net/MatrixOrigin/article/details/162736297?spm=1001.2014.3001.5501"
+      modb: "https://www.modb.pro/db/2075155544533966848"
+      oschina: "https://my.oschina.net/u/5472636/blog/19719509"
+      infoq: "https://www.infoq.cn/u/matrixorigin/publish"
+      51cto: "https://blog.51cto.com/u_17650108/14751101"
+      segmentfault: "https://segmentfault.com/a/1190000047997076"
+      linkedin: "https://www.linkedin.com/pulse/how-we-rebuilt-most-painful-part-bidding-ai-agent-gc80c/"
+      x: "https://x.com/memoria_ai/status/2075167593703587938"
+      medium: "https://medium.com/@matrixorigin-database/how-we-rebuilt-the-most-painful-part-of-bidding-with-an-ai-agent-465ad46c60e3?sharedUserId=matrixorigin-database"

@@ -47,3 +47,15 @@ channels:
   wechat:
     name: "微信公众号"
     discover: manual          # 无公开接口，无法自动抓取
+
+  linkedin:
+    name: "LinkedIn"
+    discover: manual
+
+  x:
+    name: "X"
+    discover: manual
+
+  medium:
+    name: "Medium"
+    discover: manual
