@@ -39,7 +39,8 @@ UA = ("Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 "
       "(KHTML, like Gecko) Chrome/124.0 Safari/537.36")
 GH_API = "https://api.github.com"
 MARKER = "<!-- mo-dist-bot:{key} -->"
-DISPLAY_ORDER = ["wechat", "zhihu", "csdn", "oschina", "infoq", "modb", "segmentfault", "51cto"]
+DISPLAY_ORDER = ["wechat", "zhihu", "csdn", "oschina", "infoq", "modb", "segmentfault", "51cto",
+                 "linkedin", "x", "medium"]
 # 只对这些渠道做有效性校验；微信/知乎等反爬站点对 bot 返回非 2xx 不代表链接失效，不标记。
 CHECKABLE = {"csdn", "oschina", "segmentfault"}
 
@@ -237,13 +238,14 @@ def build_comment(article, channels_cfg, eff_channels) -> str:
             rows.append(f"| {label} | — |")
     done = sum(1 for ch in DISPLAY_ORDER if eff_channels.get(ch))
     title = article.get("title_zh") or article.get("title_en") or article["key"]
+    blog_slug = article.get("blog_slug")
+    source = f"（matrixorigin-blog: `{blog_slug}`）" if blog_slug else ""
     return (
         f"### 📡 全网分发 · {title}\n\n"
-        f"已分发 **{done}/{len(DISPLAY_ORDER)}** 个渠道："
-        f"（matrixorigin-blog: `{article.get('blog_slug','')}`）\n\n"
+        f"已分发 **{done}/{len(DISPLAY_ORDER)}** 个渠道：{source}\n\n"
         "| 渠道 | 链接 |\n|------|------|\n" + "\n".join(rows) + "\n\n"
         "> 本评论由 `distribution/monitor.py` 自动维护。可抓取渠道(CSDN/OSChina/SegmentFault)"
-        "会自动登记；微信/知乎/InfoQ/墨天轮/51CTO 请人工填入 `distribution/manifest.yml`。"
+        "会自动登记；微信/知乎/InfoQ/墨天轮/51CTO/LinkedIn/X/Medium 请人工填入 `distribution/manifest.yml`。"
     )
 
 
