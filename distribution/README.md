@@ -25,12 +25,15 @@
 | 墨天轮 | ✋ 人工 | |
 | 知乎 | ✋ 人工 | 反爬严格，需登录态 |
 | 微信公众号 | ✋ 人工 | **无公开接口，无法自动抓取** |
+| LinkedIn | ✋ 人工 | |
+| X | ✋ 人工 | |
+| Medium | ✋ 人工 | |
 
 > 「人工」渠道：把链接填到 `manifest.yml` 对应文章的 `channels` 下即可，脚本会校验有效性并同步进评论。
 
 ## 文件
 
-- `manifest.yml` — **人工维护**的源清单：每篇文章 → issue 号、blog slug、中英标题、各渠道链接。脚本不会改写它。
+- `manifest.yml` — **人工维护**的源清单：每篇文章 → issue 号、可选的 blog slug、中英标题、各渠道链接。脚本不会改写它。
 - `channels.yml` — 各渠道矩阵起源账号配置。
 - `discovered.yml` — **脚本维护**的自动发现状态（勿手改）。
 - `monitor.py` — 监控脚本。
@@ -64,7 +67,7 @@ DRY_RUN=1 GITHUB_TOKEN=$(gh auth token) DEEPSEEK_API_KEY=sk-xxx python monitor.p
 ```yaml
   - key: my-article-slug          # 唯一 key（建议用 blog slug）
     issue: 30                      # 对应 mo-marketing issue 号
-    blog_slug: my-article-slug     # matrixorigin-blog 目录名
+    blog_slug: my-article-slug     # 可选；matrixorigin-blog 目录名，非博客来源可省略
     title_zh: "中文标题"
     title_en: "English title"
     channels: {}                   # 已知链接可直接填，未知的等脚本自动发现
