@@ -116,3 +116,20 @@ articles:
       linkedin: "https://www.linkedin.com/pulse/how-we-rebuilt-most-painful-part-bidding-ai-agent-gc80c/"
       x: "https://x.com/memoria_ai/status/2075167593703587938"
       medium: "https://medium.com/@matrixorigin-database/how-we-rebuilt-the-most-painful-part-of-bidding-with-an-ai-agent-465ad46c60e3?sharedUserId=matrixorigin-database"
+
+  - key: git4data-part8-ml-lifecycle
+    issue: 53
+    blog_slug: git4data-part8-ml-lifecycle
+    title_zh: "MatrixOne Git4Data 技术详解（八）·AI 训练实践篇：从数据进入到模型迭代——Git4Data 能力如何贯穿机器学习全流程"
+    title_en: "MatrixOne Git4Data Deep Dive (Part 8) · AI Training in Practice — From Data Arriving to Model Iteration: How the Git4Data Capability Runs Through the Whole ML Pipeline"
+    channels:
+      zhihu: "https://zhuanlan.zhihu.com/p/2063313885596324153"
+      csdn: "https://blog.csdn.net/MatrixOrigin/article/details/163111483?spm=1001.2014.3001.5502"
+      modb: "https://www.modb.pro/db/2079867336380194816"
+      infoq: "https://xie.infoq.cn/article/02440a38b437431daa5d73747"
+      segmentfault: "https://segmentfault.com/a/1190000048063391"
+      51cto: "https://blog.51cto.com/u_17650108/14790593"
+      oschina: "https://my.oschina.net/u/5472636/blog/19725829"
+      linkedin: "https://www.linkedin.com/feed/update/urn:li:activity:7485626610474246144"
+      x: "https://x.com/memoria_ai/status/2079853593705009363"
+      medium: "https://medium.com/@matrixorigin-database/matrixone-git4data-deep-dive-part-8-ai-training-in-practice-from-data-arriving-to-model-0ec7446ed813"
