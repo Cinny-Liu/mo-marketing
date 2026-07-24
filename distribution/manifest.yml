@@ -133,3 +133,17 @@ articles:
       linkedin: "https://www.linkedin.com/feed/update/urn:li:activity:7485626610474246144"
       x: "https://x.com/memoria_ai/status/2079853593705009363"
       medium: "https://medium.com/@matrixorigin-database/matrixone-git4data-deep-dive-part-8-ai-training-in-practice-from-data-arriving-to-model-0ec7446ed813"
+
+  - key: git4data-part9-dataset-release
+    issue: 65
+    blog_slug: git4data-part9-dataset-release
+    title_zh: "MatrixOne Git4Data 技术详解（九）·AI 训练实践篇：数据集发布与泄漏——别让离线指标骗了你"
+    title_en: "MatrixOne Git4Data Deep Dive (Part 9) · AI Training in Practice — Dataset Release & Leakage: Don't Let Your Offline Metrics Fool You"
+    channels:
+      zhihu: "https://zhuanlan.zhihu.com/p/2064020100290818052"
+      csdn: "https://blog.csdn.net/MatrixOrigin/article/details/163165141?sharetype=blogdetail&sharerId=163165141&sharerefer=PC&sharesource=MatrixOrigin&spm=1011.2480.3001.8118"
+      modb: "https://www.modb.pro/db/2080569668969000960"
+      segmentfault: "https://segmentfault.com/a/1190000048071569"
+      infoq: "https://xie.infoq.cn/article/eef6367c5198f92020371b1f5"
+      51cto: "https://blog.51cto.com/u_17650108/14796312"
+      oschina: "https://my.oschina.net/u/5472636/blog/19726921"
