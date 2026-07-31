@@ -3,6 +3,12 @@
 **文件介绍**：
 kejia 会统一在每次完成海外平台的发布任务后更新该文件，然后提合并pr
 
+## 2026-07-31
+**完成issue#71 git4data part10 海外平台部署**
+- X：https://x.com/memoria_ai/status/2083138185123770390?s=20
+- Linkedin：https://www.linkedin.com/pulse/deep-learning-managing-training-data-lakefs-files-w24dc
+- Medium：https://medium.com/@matrixorigin-database/deep-learning-managing-training-data-lakefs-for-the-files-matrixone-for-the-metadata-4e82937e2bb1?sharedUserId=matrixorigin-database
+
 ## 2026-07-24
 **完成 issue #65 git for data part9 海外平台部署**
 - X：https://x.com/memoria_ai/status/2080546257408541085
