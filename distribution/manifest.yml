@@ -147,3 +147,17 @@ articles:
       infoq: "https://xie.infoq.cn/article/eef6367c5198f92020371b1f5"
       51cto: "https://blog.51cto.com/u_17650108/14796312"
       oschina: "https://my.oschina.net/u/5472636/blog/19726921"
+
+  - key: git4data-part10-multimodal
+    issue: 71
+    blog_slug: git4data-part10-multimodal
+    title_zh: "MatrixOne Git4Data 技术详解（十）·深度学习篇：训练数据怎么管——lakeFS 管文件，MatrixOne 管元数据"
+    title_en: "MatrixOne Git4Data Deep Dive (Part 10) · Deep Learning — Managing Training Data: lakeFS for the Files, MatrixOne for the Metadata"
+    channels:
+      zhihu: "https://zhuanlan.zhihu.com/p/2066597789950272489"
+      csdn: "https://blog.csdn.net/MatrixOrigin/article/details/163374058?spm=1001.2014.3001.5501"
+      modb: "https://www.modb.pro/db/2083145392749899776"
+      infoq: "https://xie.infoq.cn/article/f53bc229294e6d57c93492926"
+      51cto: "https://blog.51cto.com/u_17650108/14814020?"
+      oschina: "https://my.oschina.net/u/5472636/blog/19730759"
+      segmentfault: "https://segmentfault.com/a/1190000048102314"
