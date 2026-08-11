@@ -161,3 +161,17 @@ articles:
       51cto: "https://blog.51cto.com/u_17650108/14814020?"
       oschina: "https://my.oschina.net/u/5472636/blog/19730759"
       segmentfault: "https://segmentfault.com/a/1190000048102314"
+
+  - key: matrixorigin-2026-potential-unicorn
+    issue: 59
+    blog_slug: matrixorigin-2026-potential-unicorn
+    title_zh: "喜报丨矩阵起源荣获2026深圳市“潜在独角兽企业”称号"
+    title_en: "Matrix Origin Named a 2026 Shenzhen Potential Unicorn Enterprise"
+    channels:
+      zhihu: "https://zhuanlan.zhihu.com/p/2070215965497897117"
+      csdn: "https://blog.csdn.net/MatrixOrigin/article/details/163643604?spm=1001.2014.3001.5501"
+      modb: "https://www.modb.pro/db/2086769329027248128"
+      infoq: "https://xie.infoq.cn/article/e8fb69a026f27cc41b1b7b8f2"
+      51cto: "https://blog.51cto.com/u_17650108/14838699"
+      segmentfault: "https://segmentfault.com/a/1190000048142088"
+      oschina: "https://my.oschina.net/u/5472636/blog/19736479"
